@@ -1,0 +1,18 @@
+.App {
+  padding-left: 10%;
+}
+
+h1{
+  margin-bottom: 60px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+@media screen and (max-width:800px){
+  .App{
+    padding: 0;
+  }
+  h1{
+    width: 80%;
+    margin: auto;
+  }
+}

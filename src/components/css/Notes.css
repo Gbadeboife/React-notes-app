@@ -1,0 +1,70 @@
+.note{
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 35px;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: #f9ce69;
+}
+textarea{
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 82%;
+    min-height: 82%;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 10px 0 0 10px;
+}
+
+.note-body{
+    line-height: 35px;
+    padding: 10px 0 0 10px;
+    font-size: 25px;
+    height: 82%;
+}
+
+
+button{
+    background-color: #4741a6;
+    padding: 10px 15px;
+    float: right;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+@media screen and (max-width:1200px){
+    .note{
+        width: 45%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    .note{
+        display: block;
+        width: 90%;
+        margin: auto;
+        height: 200px;
+
+        
+    }
+    textarea,note-body{
+        font-size: 20px;
+    }
+}

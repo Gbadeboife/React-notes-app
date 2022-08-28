@@ -6,8 +6,7 @@ import './css/Notes.css'
 
 
 function Notes(){
-    const [notes,setNotes]=useState([])
-    const [text,setText]=useState('')
+
 
 
     const updateText=(e)=>{
@@ -29,7 +28,10 @@ function Notes(){
         const filteredNotes=notes.filter((note)=>{return note.id !== id});
         setNotes(filteredNotes);
     }
-
+    
+    useEffect(()=>{const data=JSON.parse(localStorage.getItem('Notes'));setNotes(data)},[]);
+    
+    useEffect(()=>{localStorage.setItem('Notes',JSON.stringify(notes))},[notes]);
 
     return(
         <div className='Notes'>
